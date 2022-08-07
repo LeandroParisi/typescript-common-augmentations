@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "ts-common-augmentations",
   "version": "0.1.0",
   "description": "A simple package to help improve your TS powers",
   "main": "lib/index.js",
@@ -8,7 +8,7 @@
     "lint"
   ],
   "scripts": {
-    "test": "jest --config jestconfig.json",
+    "test": "echo 'tests should are yet to be created'",
     "build": "npm run lint && tsc",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
