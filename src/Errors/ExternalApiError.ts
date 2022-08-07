@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-export default class ExternalApiError extends Error {
+export class ExternalApiError extends Error {
 status : number
 
 innerError : Error

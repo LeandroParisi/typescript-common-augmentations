@@ -1,6 +1,6 @@
 /* eslint-disable no-shadow */
 
-export default class DaysUtils {
+export class DaysUtils {
   static DateNow() {
     const timestampDate = new Date(Date.now())
 

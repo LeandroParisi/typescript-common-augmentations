@@ -1,6 +1,6 @@
 /* eslint-disable guard-for-in */
 /* eslint-disable no-restricted-syntax */
-export default class EnumUtils {
+export class EnumUtils {
   public static GetEnumKeys<T>(myEnum : T) {
     const output : Array<keyof T> = []
 

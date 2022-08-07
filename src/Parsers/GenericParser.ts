@@ -3,7 +3,7 @@ interface params {
   price : number
 }
 
-export default class GenericParser {
+export class GenericParser {
   public static FormatPrice = (
     {
       price,

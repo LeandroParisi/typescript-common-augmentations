@@ -4,7 +4,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-return */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import StaticImplements from '../Anotations/StaticImplements';
+import { StaticImplements } from '../Anotations/StaticImplements'
 
 @StaticImplements()
 export class CaseSerializer {

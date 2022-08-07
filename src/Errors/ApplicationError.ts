@@ -1,4 +1,4 @@
-export default class ApplicationError extends Error {
+export class ApplicationError extends Error {
   innerError? : Error | undefined
 
   constructor(message : string, innerError? : Error) {

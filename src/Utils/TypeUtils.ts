@@ -1,4 +1,4 @@
-export default class TypeUtils {
+export class TypeUtils {
   public static IsArray(t : any) {
     return Array.isArray(t)
   }

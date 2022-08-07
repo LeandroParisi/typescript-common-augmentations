@@ -1,4 +1,4 @@
-export default class StringParser {
+export class StringParser {
   public static ToCamelCase(str : string) {
     return str
       .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) => (

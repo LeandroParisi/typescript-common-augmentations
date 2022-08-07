@@ -1,4 +1,4 @@
 /* eslint-disable no-unused-expressions */
-export default function StaticImplements<T>() {
+export function StaticImplements<T>() {
   return <U extends T>(constructor: U) => { constructor }
 }
