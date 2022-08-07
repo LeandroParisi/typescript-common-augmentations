@@ -1,6 +1,6 @@
 {
   "name": "ts-common-augmentations",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A simple package to help improve your TS powers",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
