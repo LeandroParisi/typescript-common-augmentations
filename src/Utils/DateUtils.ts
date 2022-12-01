@@ -1,7 +1,7 @@
 /* eslint-disable no-shadow */
 
 export class DaysUtils {
-  static DateNow() {
+  static dateNow() {
     const timestampDate = new Date(Date.now())
 
     const minutesInAnHour = 60
@@ -12,7 +12,7 @@ export class DaysUtils {
     return timestampDate
   }
 
-  static GetDateFromDbString(dbDate : string) : Date {
+  static getDateFromDbString(dbDate : string) : Date {
     return DaysUtils.GetDateFromTimestamp(new Date(dbDate).getTime() / 1000)
   }
 
@@ -27,12 +27,12 @@ export class DaysUtils {
     return timestampDate
   }
 
-  static GetDayNumberFromTimestamp(timestamp : number) : number {
+  static getDayNumberFromTimestamp(timestamp : number) : number {
     const sundayAsFirstDayDifference = 1
     return DaysUtils.GetDateFromTimestamp(timestamp).getDay() + sundayAsFirstDayDifference
   }
 
-  static GetDatesDifferenceInDays(currentDate : Date, previousDate : Date) : number {
+  static getDatesDifferenceInDays(currentDate : Date, previousDate : Date) : number {
     const yearsDifference = Math.abs(currentDate.getFullYear() - previousDate.getFullYear())
     const monthsDifference = Math.abs((currentDate.getMonth() + 1) - (previousDate.getMonth() + 1))
     const daysDifference = Math.abs(currentDate.getDate() - previousDate.getDate())
@@ -40,7 +40,7 @@ export class DaysUtils {
     return yearsDifference * 360 + monthsDifference * 30 + daysDifference
   }
 
-  static SubtractTimeFromDate(currentDate : Date, hoursToSubtract : number) : Date {
+  static subtractTimeFromDate(currentDate : Date, hoursToSubtract : number) : Date {
     const numberOfMlSeconds = currentDate.getTime()
     const addMlSeconds = (hoursToSubtract * 60) * 60 * 1000
     const newDateObj = new Date(numberOfMlSeconds - addMlSeconds)

@@ -1,28 +1,30 @@
 interface params {
   decimal? : boolean
   price : number
+  coinSymbol : string
 }
 
 export class GenericParser {
-  public static FormatPrice = (
+  public static formatPrice = (
     {
       price,
       decimal = true,
+      coinSymbol
     } : params,
   ) => {
-    if (decimal) return `R$ ${Number(price).toFixed(2)}`
-    return `R$ ${Number(price)}`
+    if (decimal) return `${coinSymbol} ${Number(price).toFixed(2)}`
+    return `${coinSymbol} ${Number(price)}`
   }
 
-  public static ToNumber(string : string) {
+  public static toNumber(string : string) {
     return Number(string.trim())
   }
 
-  public static ToUpperTrim(string : string) {
+  public static toUpperTrim(string : string) {
     return string.trim().toUpperCase()
   }
 
-  public static ToLowerTrim(string : string) {
+  public static toLowerTrim(string : string) {
     return string.trim().toLowerCase()
   }
 }

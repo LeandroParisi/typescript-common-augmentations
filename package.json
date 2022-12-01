@@ -1,6 +1,6 @@
 {
   "name": "ts-common-augmentations",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A simple package to help improve your TS powers",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "echo 'tests should are yet to be created'",
-    "build": "npm run lint && tsc",
+    "build": "npm run lint && tsc --strict",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
